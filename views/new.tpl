@@ -10,8 +10,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
 
-    <link href="./static/css/bootstrap.css" rel="stylesheet">
-    <link href="./static/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -19,8 +18,7 @@
     <![endif]-->
 
 
-       <link rel="stylesheet/less" type="text/css" href="./static/css/style.less" />
-    <script src="./static/js/less.js" type="text/javascript"></script>
+    <link type="text/css" href="./static/css/style.css" rel="stylesheet"/>
 
   </head>
 
@@ -93,8 +91,7 @@
           <div class="container">
             <div class="header-caption">
               <h1>michael luckeneder.</h1>
-              <p>software engineer @ Yelp<br/>
-                Test</p>
+              <p>Software Engineer @ Yelp</p>
               <!-- <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p> -->
             </div>
         </div>

@@ -1,64 +1,58 @@
-@import "elements.less";
-
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 /*@color3: #FF9900;*/
 /*@color3: #FFFF66;*/
-@color3: lighten(#64A8D1, 10%);
-
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
-.vspace { height: 120px;}
-
+.vspace {
+  height: 120px;
+}
 h2 {
-  margin-top:-30px;
-  font-size:70px;
+  margin-top: -30px;
+  font-size: 70px;
   /*text-align:center;*/
   /*text-decoration:underline;*/
-  font-weight:lighter;
+  font-weight: lighter;
 }
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: relative;
   z-index: 10;
 }
-
 .navbar {
   /*width:80%;*/
   /*margin:0 auto;*/
   /*margin-top:30px;*/
 }
-
 .skill-row {
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
-
 /* Carousel base class */
 .carousel {
   /*margin-bottom: 60px;*/
-
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
   margin-top: -50px;
 }
-
-.carousel-control.left, .carousel-control.right {
-  color:#000;
-  background:transparent;
+.carousel-control.left,
+.carousel-control.right {
+  color: #000;
+  background: transparent;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
 }
-
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 400px;
@@ -70,76 +64,60 @@ h2 {
   min-width: 100%;
   height: 500px;
 }
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 header {
   /*margin-bottom: 60px;*/
-
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  height:450px;
-
+  height: 450px;
   /*.gradient(@color3, @color3, darken(@color3, 20%));*/
   /*background-color:@color3;*/
-  background: @color3 url('/static/img/bb.png') no-repeat center top;
+  background: #8bbedd url('/static/img/bb.png') no-repeat center top;
   /*background: @color3 url('./static/img/gradient.svg') no-repeat center top;*/
-    background-size: cover;
+  background-size: cover;
   margin-top: -90px;
-  margin-bottom:30px;
-  .drop-shadow(0, 2px, 2px, 0.9);
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }
-
 div#projects {
-    /*background: @color3 url('./static/img/gradient.svg') no-repeat center top;*/
-    /*background-size: cover;*/
-
+  /*background: @color3 url('./static/img/gradient.svg') no-repeat center top;*/
+  /*background-size: cover;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .header-caption {
   position: absolute;
-right: 15%;
-left: 15%;
-z-index: 10;
-right: 20%;
-left: 20%;
-padding-bottom: 30px;
-padding-top: 20px;
-padding-bottom: 20px;
-color:
-#ffffff;
-text-align: center;
-text-shadow: 0 1px 2px
-rgba(0, 0, 0, 0.6);
+  right: 15%;
+  left: 15%;
+  right: 20%;
+  left: 20%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   z-index: 10;
-  color:#fff;
-  top:120px;
+  color: #fff;
+  top: 120px;
   /*text-shadow:1px 1px 1px #000;*/
-  p
-  {
-  font-size:20px !important;
-  }
-
 }
-
-
+.header-caption p {
+  font-size: 20px !important;
+}
 /* Declare heights because of positioning of img element */
 header .container {
   height: 450px;
 }
-
-
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Pad the edges of the mobile views a bit */
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Center align the text within the three columns below the carousel*/
 .marketing .col-lg-4 {
   text-align: center;
@@ -152,35 +130,31 @@ header .container {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .lead {
   text-align: justify;
-  margin-top:50px;
+  margin-top: 50px;
 }
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-   /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden;
+  /* Vertically center images part 2: clear their floats. */
 }
-
 .featurette-spacer {
   padding-top: 100px;
 }
 .featurette-image {
-  margin-top: -50px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-  padding:50px;
-    height:412px;
-    width:412px;
-
+  margin-top: -50px;
+  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  padding: 50px;
+  height: 412px;
+  width: 412px;
 }
-
-
-
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
@@ -188,7 +162,6 @@ header .container {
 .featurette-image.pull-right {
   margin-left: 40px;
 }
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
@@ -196,9 +169,6 @@ header .container {
   line-height: 1;
   letter-spacing: -1px;
 }
-
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /*@media (min-width: 1200px) {
@@ -207,100 +177,71 @@ header .container {
   }
 }
 */
-
-@media (min-width: 1600px){
- header  {
+@media (min-width: 1600px) {
+  header {
     height: 550px;
-
   }
-
   .header-caption {
-      top:200px;
+    top: 200px;
   }
   .navbar {
     /*background-color:#9d3735;*/
     /*color:#000;*/
   }
-  ul.nav li a{
+  ul.nav li a {
     /*color:#000;*/
   }
-
 }
 h1 {
-
-    font-size:60px;
-
+  font-size: 60px;
 }
-
 .about_text {
-  width:80%;
-  margin:0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
-
 .past_experience {
   /*.opacity(0.8);*/
 }
 .about_text-image {
-
-  float:left;
-    /*height:60px;*/
-
+  float: left;
+  /*height:60px;*/
 }
-
 .about_text-image-square {
   /*margin-left:30px;*/
 }
-
 .about_text_content {
-  margin-left:300px;
-  display:block;
-    padding-top:30px;
-
+  margin-left: 300px;
+  display: block;
+  padding-top: 30px;
 }
-
 .text-middle {
-  padding-top:45px;
+  padding-top: 45px;
 }
-
-
-
 @media (min-width: 768px) {
-
   /* Remve the edge padding needed for mobile */
   .marketing {
     padding-left: 0;
     padding-right: 0;
   }
-
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 10px;
-  z-index:100000000;
-
+    z-index: 100000000;
   }
-
-
-
-
-    ul.nav li.active a{
-    color:#fff;
+  ul.nav li.active a {
+    color: #fff;
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
-  width:92%;
-  margin:0 auto;
-  margin-top:10px;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 10px;
   }
-
-
-
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
-
     line-height: 1.4;
   }
-
 }
