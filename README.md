@@ -1,4 +1,5 @@
-# luckeneder.net-onepage
+luckeneder.net-onepage
+======================
 A new website draft utilizing a one-page layout
 
 To run this, first build the docker image with
